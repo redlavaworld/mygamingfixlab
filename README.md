@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MyGamingFixLab
 
-## Getting Started
+A professional Next.js starter for an SEO-focused gaming troubleshooting website.
 
-First, run the development server:
+## Run locally
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+On Windows PowerShell (if PowerShell blocks npm/npx scripts, use `.cmd`):
+
+```powershell
+cd C:\path\to\mygamingfixlab
+npm.cmd install
+npm.cmd run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production check
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```powershell
+npm.cmd run build
+npm.cmd start
+```
 
-## Learn More
+## Before publishing
 
-To learn more about Next.js, take a look at the following resources:
+1. Set `NEXT_PUBLIC_SITE_URL` in your deployment environment.
+2. Replace `hello@mygamingfixlab.com` if you use a different contact address.
+3. Replace/expand sample guides with original tested content, screenshots, logs and authoritative source links.
+4. Review Privacy, Terms and Disclaimer pages against the actual services you deploy.
+5. Add analytics/Search Console after the domain is live.
+6. Add AdSense only after approval. `AdSlot` components are placeholders and do not load any ad network code.
+7. Add clear affiliate disclosures if affiliate links are introduced.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `/game-fixes`
+- `/pc-gaming`
+- `/gta-v`
+- `/rust`
+- `/roblox`
+- `/steam`
+- `/game-servers`
+- `/tools`
+- `/articles/[slug]`
+- `/search`
 
-## Deploy on Vercel
+Article content currently lives in `lib/articles.ts`. This keeps the starter dependency-free and easy to understand. For a larger site, move content into a CMS or MDX pipeline.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Monetization readiness
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The layout includes reserved ad positions, legal pages, semantic article pages, sitemap and robots metadata. This does **not** guarantee Google rankings or AdSense approval; those depend heavily on original content quality, policy compliance, site history and traffic.

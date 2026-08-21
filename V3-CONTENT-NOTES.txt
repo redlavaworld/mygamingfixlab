@@ -1,0 +1,14 @@
+MyGamingFixLab Professional V3
+
+Added in V3:
+- 10 source-backed SEO troubleshooting guides focused on GTA V, Rust and Steam.
+- Official-source links displayed directly inside V3 articles.
+- GTA V: BattlEye troubleshooting, ERR_GFX_STATE, Error 134, Driver Load Error 1072.
+- Rust: EAC Authentication Timeout, TPM/Secure Boot, Client Integrity Violation, EAC Disconnected.
+- Steam: games not launching after Preparing to Launch, and This Game Is Currently Unavailable.
+- Homepage featured guides updated to surface the new source-backed content.
+- Existing V2 design, navigation, search, category pages, legal pages and branding preserved.
+
+Important:
+Before public launch, add your own screenshots/testing observations wherever possible.
+Do not paste AdSense code until the site has enough useful original content and is ready for review.

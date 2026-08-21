@@ -1,0 +1,20 @@
+MYGAMINGFIXLAB — WINDOWS SETUP
+
+1. Extract this ZIP.
+2. Open PowerShell inside the extracted mygamingfixlab folder.
+3. Run:
+
+   npm.cmd install
+   npm.cmd run dev
+
+4. Open http://localhost:3000
+
+Production check before deployment:
+
+   npm.cmd run build
+
+Notes:
+- Header logo, favicon, Apple touch icon and Open Graph artwork are already included.
+- AdSlot components are placeholders only; do not paste AdSense code until the site/account is ready.
+- Sample guides should be upgraded with tested details, screenshots and sources before a public SEO launch.
+- If Brave/Bybit or another wallet extension injects data-* attributes and Next.js shows a hydration warning, test in a private window with that extension disabled. That warning is browser-extension generated, not a site rendering bug.
