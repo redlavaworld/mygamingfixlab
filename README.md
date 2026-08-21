@@ -24,7 +24,7 @@ npm.cmd start
 ## Before publishing
 
 1. Set `NEXT_PUBLIC_SITE_URL` in your deployment environment.
-2. Replace `hello@mygamingfixlab.com` if you use a different contact address.
+2. Replace `hello@mygamingfixlab.online` if you use a different contact address.
 3. Replace/expand sample guides with original tested content, screenshots, logs and authoritative source links.
 4. Review Privacy, Terms and Disclaimer pages against the actual services you deploy.
 5. Add analytics/Search Console after the domain is live.

@@ -18,8 +18,10 @@ export default function AboutPage() {
         <li>Correct outdated guides when versions or behavior change.</li>
         <li>Do not use fake download buttons or misleading ads.</li>
       </ul>
-      <h2>Before launch</h2>
-      <p>This starter project includes sample content to demonstrate the site structure. Replace or expand sample guides with original testing, screenshots, logs, source references and author experience before applying for monetization.</p>
+      <h2>How guides are built</h2>
+      <p>We start with the exact symptom, prefer official documentation and support material, and order troubleshooting from reversible checks to more invasive changes. When a guide is based on vendor documentation rather than first-hand testing, the relevant official sources are linked on the page.</p>
+      <h2>Corrections and transparency</h2>
+      <p>Software changes quickly. If a documented step, menu path or requirement has changed, use the Contact page and include the guide URL, current version and the exact behavior you observed. We review corrections before updating a guide.</p>
     </main>
   );
 }

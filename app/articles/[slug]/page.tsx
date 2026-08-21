@@ -23,6 +23,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) notFound();
+  const relatedArticles = articles
+    .filter((item) => item.slug !== article.slug && item.categorySlug === article.categorySlug)
+    .slice(0, 3);
 
   return (
     <main>
@@ -32,6 +35,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <h1>{article.title}</h1>
           <p className="article-deck">{article.excerpt}</p>
           <div className="article-byline">
+            <span>MyGamingFixLab Editorial Team</span>
             <span>{article.readTime}</span>
             <span>Difficulty: {article.difficulty}</span>
             <span>Updated {article.updated}</span>
@@ -81,6 +85,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <strong>Editorial note</strong>
                 <p>This guide is part of the starter knowledge base. Add your own testing notes, screenshots, exact version information and source links before promoting it as a verified production guide.</p>
               </div>
+            )}
+
+
+            {relatedArticles.length > 0 && (
+              <section className="source-box">
+                <h2>Related troubleshooting guides</h2>
+                <p>Continue with closely related guides from the same topic hub.</p>
+                <ul>
+                  {relatedArticles.map((item) => (
+                    <li key={item.slug}>
+                      <Link href={`/articles/${item.slug}`}>{item.title} →</Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
             )}
           </div>
         </article>
